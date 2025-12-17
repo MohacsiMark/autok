@@ -1,0 +1,156 @@
+html {
+ height: 100%;
+}
+
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: #EFF5D2;
+ color: #333;
+ min-height: 100%;
+ flex-direction: column;
+}
+
+.fixFooter{
+    display: flex;
+}
+
+header {
+ position: sticky;
+ top: 0;
+ left: 0;
+ background-color: #1055C9;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ padding: 10px 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 10001;
+ height: 60px;
+}
+
+.logo {
+ font-size: 24px;
+ font-weight: bold;
+ color: #EFF5D2;
+ content: "MRM";
+}
+
+.Nev{
+    color: #39A388;
+}
+
+.contact-info {
+ text-align: right;
+ color: #C6D870;
+
+}
+
+.contact-info p {
+ margin: 5px 0;
+}
+
+main {
+ flex: 1 0 auto;
+ padding-top: 80px;
+}
+
+nav {
+    position: relative;
+    left: 0;
+    margin-top: -80px;
+    width: 100%;
+    background-color: #1581BF;
+    color: #EFF5D2;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #EFF5D2;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li:hover>a {
+ background-color: #39A388;
+ border: 1px solid #C6D870;
+ border-radius: 4px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #8FA31E;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li ul li {
+ margin: 0;
+}
+
+nav ul li ul li a {
+ padding: 10px 15px;
+}
+
+nav ul li ul li a:hover {
+ border: 1px solid #C6D870;
+ background-color: #39A388;
+}
+
+.no-link {
+ color: #EFF5D2;
+ padding: 10px;
+ display: block;
+ cursor: default;
+}
+.no-link:hover {
+ background-color: #1581BF;
+ border: 1px solid #C6D870;
+}
+
+::-webkit-scrollbar {
+width: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: #1581BF;
+}
+
+::-webkit-scrollbar-thumb {
+background: #1055C9; 
+border: 1px solid #1581BF; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+border: 1px solid #1581BF;
+background: #1055C9; 
+}
+
+b{
+    color: #78C1F3;
+}

@@ -1,0 +1,240 @@
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: #EFF5D2;
+ color: #333;
+ min-height: 100%;
+ flex-direction: column;
+}
+
+nav{
+    top: 80px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 120px;
+    min-height: calc(100vh - 120px);
+}
+
+.filter-sidebar {
+    width: 260px;
+    background-color: #1055C9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.filter-sidebar h2 {
+    color: #39A388;
+    margin-bottom: 15px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-group input {
+    width: 93.5%;
+    padding: 8px;
+    border: 1px solid #8FA31E;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.filter-group select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #8FA31E;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.filter-group button {
+    background-color: #1581BF;
+    color: #EFF5D2;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-group button:hover {
+    background-color: #78C1F3;
+}
+
+.property-grid-container {
+    flex: 1;
+}
+
+.property-grid-container h1 {
+    color: #39A388;
+    margin-bottom: 20px;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.property-card {
+    background-color: #fff;
+    border: 1px solid #C6D870;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    margin: 12px;
+    color: #39A388;
+    font-size: 18px;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    color: #39A388;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #8FA31E;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #39A388;
+}
+
+
+.simple-carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 3px solid #8FA31E;
+}
+
+.carousel-track-container {
+    height: 450px;
+}
+
+.carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #C6D870;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background: #556B2F;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicator.current-slide {
+    opacity: 1;
+    background: #8FA31E;
+}
+
+a{
+    text-decoration: none;
+}

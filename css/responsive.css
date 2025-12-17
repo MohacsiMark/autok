@@ -1,0 +1,96 @@
+@media only screen and (max-width: 480px) {
+    header {
+        columns: 1;
+        margin-bottom: 150px;
+    }
+
+    .MRM{
+        font-size: small;
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+    .logo{
+        margin-left: -25px;
+    }
+
+    nav{
+        margin-top: -230px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        row-gap: 20px;
+    }
+
+    footer{
+        columns: 3;
+    }
+
+    footer > h3{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container{
+        width: auto;
+    }
+
+    /*Ingalanok*/
+
+    aside{
+        height: max-content;
+        width: 100%;
+        margin-left: 40px;
+        margin-top: 5;
+
+    }
+
+    section{
+        clear: both;
+        padding: 0;
+        text-align: left;
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .property-grid-container{
+        margin-left: -350px;
+        margin-top: 735px;
+    }
+
+    section > h1{
+        text-align: center;
+    }
+
+    iframe{
+        height: 375px;
+        width: 375px;
+    }
+
+    #Container{
+        width: 100%;
+    }
+
+    #Header_Contact{
+        line-height: 14px;
+    }
+
+    fieldset{
+        width: 300px;
+    }
+
+    footer{
+        margin-left: auto;
+        margin-right: auto;
+        gap: 10;
+        row-gap: 10;
+        display: grid;
+        column-gap: normal;
+    }
+}
