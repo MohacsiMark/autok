@@ -43,13 +43,10 @@ driver.execute_cdp_cmd(
 )
 
 try:
-    driver.get("http://127.0.0.1:5500/html/autok.html")
+    driver.get("https://mohacsimark.github.io/autok/html/autok.html")
     time.sleep(2)
     delete=driver.find_element(By.ID,'BMW')
     delete.click()
-    time.sleep(2)
-    modify=driver.find_element(By.ID,"4")
-    modify.click()
     time.sleep(2)
 
 finally:
