@@ -45,12 +45,11 @@ driver.execute_cdp_cmd(
 try:
     driver.get("http://127.0.0.1:5500/html/autok.html")
     time.sleep(2)
-    elfogadás=driver.find_element(By.CLASS_NAME,'sy4vM')
-    elfogadás.click()
+    delete=driver.find_element(By.ID,'BMW')
+    delete.click()
     time.sleep(2)
-    modify=driver.find_element(By.ID_NAME,'BMW')
+    modify=driver.find_element(By.ID,"4")
     modify.click()
-    time.sleep(2)
     time.sleep(2)
 
 finally:

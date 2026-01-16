@@ -105,6 +105,7 @@ function renderAutok(lista) {
         editBtn.textContent = "Módosítás";
         editBtn.setAttribute("class","cardBtn");
         editBtn.setAttribute("id",auto.id)
+        felModMarka.setAttribute("id","marka")
         editBtn.addEventListener("click", () => {
             autoIdInput.value = auto.id;
             felModMarka.value = auto.marka;
