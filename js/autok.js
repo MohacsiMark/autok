@@ -92,6 +92,7 @@ function renderAutok(lista) {
 
         const deleteBtn = document.createElement("button");
         deleteBtn.setAttribute("class","cardBtn");
+        deleteBtn.setAttribute("id",auto.marka)
         deleteBtn.textContent = "Törlés";
         deleteBtn.addEventListener("click", () => {
         const index = AutokLista.findIndex(a => a.id === auto.id);
@@ -103,6 +104,7 @@ function renderAutok(lista) {
         const editBtn = document.createElement("button");
         editBtn.textContent = "Módosítás";
         editBtn.setAttribute("class","cardBtn");
+        editBtn.setAttribute("id",auto.id)
         editBtn.addEventListener("click", () => {
             autoIdInput.value = auto.id;
             felModMarka.value = auto.marka;
